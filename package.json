@@ -1,0 +1,27 @@
+{
+  "name": "bloguru",
+  "version": "1.0.0",
+  "description": "A Blog App",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadTalhakhan2003/Bloguru.git"
+  },
+  "author": "Muhammad Talha Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuhammadTalhakhan2003/Bloguru/issues"
+  },
+  "homepage": "https://github.com/MuhammadTalhakhan2003/Bloguru#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
