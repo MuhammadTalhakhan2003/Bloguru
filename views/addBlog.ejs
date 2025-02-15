@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head') %>
+    <title>Bloguru Add New Blog</title>
+  </head>
+  <body>
+
+    <%- include('./partials/navbar') %>
+
+    <div class="container mt-3">
+      <form action="/blog" method="post"  enctype="multipart/form-data">
+      
+        <div class="mb-3">
+            <label for="CoverImage">CoverImage</label>
+            <input type="file" class="form-control" id="CoverImage" name="CoverImage" aria-describedby="CoverImage" placeholder="Upload CoverImage Here..">
+          </div>
+        <div class="mb-3">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" name="title" aria-describedby="title" placeholder="Enter Title Here..">
+        </div>
+
+        <div class="mb-3">
+          <label for="body">Content</label>
+          <textarea name="body" id="body" class="form-control" placeholder="Leave A Comment" 
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <%- include('./partials/scripts') %>
+
+  </body>
+</html>
